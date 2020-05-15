@@ -85,3 +85,13 @@ def download_report(filing_results):
                       
             except:
                 pass
+
+# Import tickers
+TickerFile = pd.read_csv("~/Downloads/tickers.csv")
+Tickers = TickerFile['Symbol'].tolist()
+tickers = Tickers
+
+for ticker in tickers:
+    filing_results = get_filing_results(ticker)
+    if len(filing_results) > 0:
+        download_report(filing_results)
