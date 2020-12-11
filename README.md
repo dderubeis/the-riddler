@@ -1,2 +1,2 @@
 # hello-world
-Just another repository
+Riddles I have solved from Five Thirty Eight's column but mostly just another repository.
